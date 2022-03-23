@@ -1,23 +1,21 @@
 package br.com.fai.models;
 
 public abstract class Animal {
-	
+
+	private static int animalsIds = 0;
+
 	private int id;
 	private String nome;
 	
 	public Animal () {}
 	
-	public Animal (int id, String nome) {
-		this.id = id;
+	public Animal (String nome) {
+		this.id = animalsIds;
 		this.nome = nome;
 	}
 
 	public int getId() {
 		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
 	}
 
 	public String getNome() {
