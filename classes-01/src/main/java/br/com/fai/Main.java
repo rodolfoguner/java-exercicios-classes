@@ -33,6 +33,8 @@ public class Main {
 				scanner.next();
 				System.out.println(e.getMessage());
 				System.out.println("Ocorreu um erro. Tente novamente.");
+
+				continue;
 			}
 
 			switch (opcao) {
